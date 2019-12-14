@@ -1,0 +1,44 @@
+mixin s-cases()
+	// start s-cases
+	+b.SECTION.s-cases.section#s-cases&attributes(attributes)
+		.container
+			+e.wrap
+				h2 Кейсы
+				+e.slider-title--js
+					.slick-slide
+						+e.slide-title Дело о взыскании дебиторской задолженности – 1 
+					.slick-slide
+						+e.slide-title Дело о взыскании дебиторской задолженности – 1 
+					.slick-slide
+						+e.slide-title Дело о взыскании дебиторской задолженности – 1 
+				+e.slider-wrap
+					+e.slider--js
+						mixin case-slide()
+							.slick-slide
+								+e.slide-row.row
+									+e.col.col-lg-6
+										+e.title-img-wrap
+											img.res-i(src='img/@2x/case-title.png' alt='')
+										p Компания  «ЮСК – Империя» поставила покупателю товар,&nbsp;который не был оплачен в установленные договором&nbsp;сроки.
+										p
+											strong Задача:
+											| взыскать с покупателя задолженность за неоплаченный&nbsp;товар.
+										p
+											strong Сложности дела:
+											| Поставщик уже обращался в суд, и суд первой инстанции&nbsp;неправомерно снизил размеры выплат.
+									+e.col.col-lg-6
+										p
+											strong Результат:
+											| Отмена неправомерного решения суда и взыскание с покупателя полной суммы вместе с неустойкой и оплатой расходов на юриста. Деньги на счет поставщика поступили в полном объеме.
+										p
+											strong Сумма взыскания:
+											span 136 494 ₽
+						+case-slide()
+						+case-slide()
+						+case-slide()
+					+e.slider-btn--left.btn
+						+icon('left')
+					+e.slider-btn--right.btn
+						+icon('right')
+				+e.slider-dots
+	// end s-cases

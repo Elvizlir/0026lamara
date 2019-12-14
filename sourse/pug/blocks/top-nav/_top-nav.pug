@@ -1,0 +1,32 @@
+
+mixin mob-mnu()
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row
+				+e.col.col
+					+e.A.title(href='#')
+						span Ламара Аланиа 
+						| Строительный Арбитраж
+				+e.col--line.col-auto.d-none.d-lg-block
+					+e.adress Краснодар, ул. Линейная 21, офис. 3
+				+e.col--line.col-auto.d-none.d-md-block
+					+e.A.phone(href='tel:+79002504850') +7 900-250-48-50
+				+e.col.col-auto.d-none.d-sm-block
+					+e.A.btn.btn.btn-primary(href='tel:+79002504850') Бесплатный звонок
+				+e.col.col-auto.d-sm-none
+					+e.A.icon-link(href='tel:+79002504850')
+						+icon('phone')
+					
+	// end top-nav

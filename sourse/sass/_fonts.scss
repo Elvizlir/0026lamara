@@ -1,0 +1,30 @@
+
+$default-font: "Opinion";
+$secondary-font: "Roboto";
+$carolina-font: "Carolina";
+$arial-font: "Arial";
+$rubl-font: "Myrad";
+
+$addr: '../fonts/';
+$file-format: woff2;
+
+@include font-face ($default-font, $addr + "OpinionPro-Light", 200 ,$file-formats: $file-format);
+// @include font-face ($default-font, $addr + "DIN2014-Light", 300 ,$file-formats: $file-format);
+@include font-face ($default-font, $addr + "OpinionPro-LightItalic", 300 , italic , $file-formats: $file-format);
+// @include font-face ($default-font, $addr + "DIN2014-LightItalic", 300 , italic , $file-formats: $file-format);
+@include font-face ($secondary-font, $addr + "Roboto-Bold", bold, $file-formats: $file-format);
+@include font-face ($carolina-font, $addr + "Carolina", 400, $file-formats: $file-format);
+@include font-face ($arial-font, $addr + "ArialMT", 400, $file-formats: $file-format);
+@include font-face ($rubl-font, $addr + "Myriad-Roman", 400, $file-formats: $file-format);
+
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin;
+// 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black

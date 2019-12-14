@@ -1,0 +1,25 @@
+mixin s-conditions()
+	// start s-conditions
+	+b.s-conditions.section#s-conditions&attributes(attributes)
+		.container
+			+e.row.row
+				+e.title-col.col-lg-5
+					h2 В каких случаях
+						span «Я СМОГУ ПОМОЧЬ»
+				+e.list-col.col-lg-7
+					ul
+						li Заказчик, генподрядчик 
+							strong не платит 
+							| по договору
+						li Генподрядчик предъявил 
+							strong необоснованно завышенную 
+							| сумму санкций по договору
+						li
+							strong Не отдают долги 
+							| по расписке, в том числе наличные
+						li На вашу компанию необоснованно 
+							strong наложили штраф
+						li
+							strong Иные 
+							| мелкие хозяйственные и административные споры
+	// end s-conditions

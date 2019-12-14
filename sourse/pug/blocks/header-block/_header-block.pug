@@ -1,0 +1,24 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		img.bg-img(src='img/@2x/header-bg.jpg' alt='')
+		.container
+			+e.img-wrap
+				+e.IMG.abs-img(src='img/@2x/header-abs.png' alt='')
+			+e.content-wrapper
+				h1
+					span Взыскание Дебиторской задолженности 
+					| в&nbsp;строительстве
+				+e.subtitle от профессионального юриста
+				+e.ask-block
+					+e.ask-head
+						+e.ask-title
+							span Оплата по факту возвращения средств
+							| Без дополнительных платежей
+					+e.ask-body
+						+form-wrap
+							.header-block__input-wrap
+								.header-block__input-text Расскажите мне о своей проблеме:
+								+input('', 'text', '', 'ask')
+							+e.btn.btn.btn-primary(type="submit") Отправить сообщение
+	// end header-block

@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-numbers/_s-numbers.pug
+include ../blocks/s-conditions/_s-conditions.pug
+include ../blocks/s-reviews/_s-reviews.pug
+include ../blocks/s-get/_s-get.pug
+include ../blocks/s-steps/_s-steps.pug
+include ../blocks/s-cases/_s-cases.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+	+header()
+		+top-nav()
+	+header-block()
+	+s-about()
+	+s-numbers()
+	+s-conditions()
+	+s-reviews()
+	+s-get()
+	+s-steps()
+	+s-cases()
+	+s-form()
+	+s-contact()
+	+footer()

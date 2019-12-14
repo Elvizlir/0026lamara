@@ -1,0 +1,18 @@
+mixin s-numbers()
+	// start s-numbers
+	+b.SECTION.s-numbers.section#s-numbers&attributes(attributes)
+		.container
+			+e.block
+				h2 Немного цифр о моей работе:
+				+e.row.row
+					+e.col.col-xl-3.col-sm-6
+						+e.number 21
+						+e.item-title Количество дел по строительному арбитражу
+					+e.col.col-xl-3.col-sm-6
+						+e.number 97%
+						+e.item-title Процент выигранных дел
+					+e.col.col-xl-6
+						+e.number 3.567.143
+							span ₽
+						+e.item-title Сумма возвращенных средств моим клиентам в 2019 году
+	// end s-numbers

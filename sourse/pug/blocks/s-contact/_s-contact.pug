@@ -1,0 +1,23 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		.container
+			+e.row-wrap
+				+e.row.row
+					+e.title-col.col-xl-5
+						+e.A.title(href='#') ЛАМАРА АЛАНИА Строительный Арбитраж
+						+e.subtitle ИНН 234706077864
+					+e.adress-col.col-xl-4.col-md-6
+						p г.Краснодар, ул. Линейная 21, офис. 54
+						p Время работы: пн-пт с 9-00 до 17-00
+						p E-mail: 
+							a(href='mailto:info@alania23.ru') info@alania23.ru
+					+e.contact-col.col-xl-3.col-md-6
+						+e.contacts-wrapper
+							+icon('contact')
+							+e.contacts
+								+e.A.number(href='tel:+79002504850') +7 900-250-48-50
+								+e.A.btn.btn.btn-primary(href='tel:+79002504850') Заказать звонок
+			+e.map-wrap
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A163e95bc9895f06eec4df156b9172b8563a758e0683e991534670e61ebfea782&amp;source=constructor" width="1075" height="600" ></iframe>
+	// end s-contact
