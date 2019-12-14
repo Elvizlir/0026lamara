@@ -39,7 +39,6 @@
 			text-align: center;
 			display: inline-block;
 		}
-		@extend .text-shadow;
 		color: #603913;
 		display: block;
 		span{
@@ -87,13 +86,11 @@
 	}
 
 	&__adress{
-		@extend .text-shadow;
 		color: #603913;
 		margin: 0 rem(8);
 	}
 
 	&__phone{
-		@extend .text-shadow;
 		color: #603913;
 		display: block;
 		font-size: rem(20);
@@ -106,6 +103,7 @@
 
 	&__btn{
 		width: rem(181);
+		font-weight: 300;
 	}
 
 	&__icon-link{
