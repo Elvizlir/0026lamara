@@ -34,9 +34,20 @@
 			padding-right: rem(60);
 		}
 		margin-bottom: rem(5);
+		.slick-track{
+			display: flex;
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+		.slick-slide{
+			height: inherit;
+		}
 	}
 
 	&__slide-row{
+		height: 100%;
 		@include roww(30);
 		align-items: center;
 	}
